@@ -569,7 +569,7 @@ export interface EditorProps {
   /// Called when something is dropped on the editor. `moved` will be
   /// true if this drop moves from the current selection (which should
   /// thus be deleted).
-  handleDrop?: (view: EditorView, event: MouseEvent, slice: Slice, moved: boolean) => boolean | void
+  handleDrop?: (view: EditorView, event: DragEvent, slice: Slice, moved: boolean) => boolean | void
 
   /// Called when the view, after updating its state, tries to scroll
   /// the selection into view. A handler function may return false to
